@@ -1,4 +1,3 @@
-
 <div align="center">
   <h1>GitHub for Derryk Boyd - @dboydgit</h1>
   <img src="/images/hello.webp" alt="Greeting" width="200">
@@ -12,4 +11,3 @@
   <br>
   <a href="https://dboydgit-to-do.web.app/">dboydgit To-Do (Web App)</a>
 </div>
-
