@@ -1,5 +1,9 @@
 ![Greeting](/images/hello.webp)
 
-<img src="/images/hello.webp" alt="Greeting" width="125">
+<p align="center">
+  <h1>GitHub for Derryk Boyd - @dboydgit</h1>
+  <img src="/images/hello.webp" alt="Greeting" width="250">
+  
+</p>
 
 # GitHub for Derryk Boyd - @dboydgit
