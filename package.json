@@ -1,0 +1,32 @@
+{
+  "name": "dboydgit.github.io",
+  "version": "0.0.1",
+  "description": "Personal site for Derryk Boyd, @dboydgit on GitHub",
+  "keywords": [
+    "developer",
+    "portfolio"
+  ],
+  "license": "MIT",
+  "author": "Derryk Boyd",
+  "scripts": {
+    "copy": "copyfiles robots.txt humans.txt favicon.ico docs",
+    "build": "parcel build *.html -d docs && npm run copy",
+    "dev": "parcel index.html --open",
+    "start": "npm run build && npm run dev"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.3.0",
+    "gh-pages": "^3.1.0",
+    "parcel-bundler": "^1.12.4"
+  },
+  "main": "index.html",
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dboydgit/dboydgit.github.io"
+  },
+  "bugs": {
+    "url": "https://github.com/dboydgit/dboydgit.github.io/issues"
+  },
+  "homepage": "http://dboydgit.github.io/"
+}

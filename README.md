@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>GitHub for Derryk Boyd - @dboydgit</h1>
+  <h1>Personal Site for Derryk Boyd - @dboydgit</h1>
   <img src="/images/hello.webp" alt="Greeting" width="200">
   <br>
   <h2>Useful Links:</h2>

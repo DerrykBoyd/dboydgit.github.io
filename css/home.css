@@ -1,0 +1,279 @@
+/* Add Roboto font and imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import './variables.css';
+@import './common.css';
+@import './animations.css';
+
+nav {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+.nav-content {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.65rem 1rem;
+  max-width: 1600px;
+  margin: auto;
+}
+
+.nav-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 0;
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-link {
+  padding: 0 0.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--primary-dark);
+}
+
+.nav-social-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-link {
+  height: 2rem;
+  margin: 0 0.75rem;
+}
+
+.btm-nav {
+  display: none;
+}
+
+.btm-nav-link {
+  text-decoration: none;
+  font-size: 0.8rem;
+  color: var(--text-light-dis);
+}
+
+.btm-nav-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 2fr 1fr;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  padding: 1rem 0 0.5rem 0;
+  width: 900px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.hero-text {
+  font-size: 1.25rem;
+  text-align: center;
+  margin: 0;
+}
+
+.typewriter {
+  border-right: 3px solid var(--primary);
+  min-height: 4rem;
+  font-size: 3rem;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.profile-img-container {
+  grid-row: span 2;
+}
+
+#profile-img {
+  height: 160px;
+  border: solid 3px var(--primary);
+  border-radius: 50%;
+}
+
+.resume-dl {
+  margin: 1rem 0 0 0;
+}
+
+.section-heading {
+  color: var(--primary);
+  text-align: center;
+}
+
+.anchor:before {
+  content: '';
+  display: block;
+  position: relative;
+  width: 0;
+  height: 4rem;
+  margin-top: -4rem;
+}
+
+.sub-heading {
+  text-align: center;
+}
+
+.skill-grid {
+  justify-content: center;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  justify-items: center;
+  align-items: center;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  min-width: 100px;
+}
+
+.sk-badge {
+  height: 2rem;
+  margin: 0.5rem;
+}
+
+.project-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(calc(380px - 1rem), 1fr));
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  max-width: calc(100vw - 3rem);
+}
+
+.project-title {
+  display: grid;
+  gap: 1rem;
+  font-size: 1.5rem;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.project-logo {
+  height: 3rem;
+  padding: 0 0.5rem;
+  border-radius: 50%;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.project-tech>img {
+  height: 1.75rem;
+  padding: 0.5rem;
+}
+
+.edu-section {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(calc(380px - 1rem), 1fr));
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+.edu-card {
+  max-width: calc(100vw - 3rem);
+}
+
+.edu-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edu-text {
+  text-align: center;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  padding: 1rem 0;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.credits {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 450px) {
+  .nav-title {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-page-links {
+    display: none;
+  }
+  .content {
+    padding-bottom: 3.5em;
+    padding-top: 0.5rem;
+  }
+  .hero, .project-grid {
+    grid-template-columns: 1fr;
+  }
+  nav {
+    position: initial;
+  }
+  .btm-nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    position: fixed;
+    bottom: 0;
+    height: 3.5rem;
+    width: 100vw;
+    background-color: var(--primary-dark);
+  }
+  .active {
+    color: white;
+  }
+  .anchor:before {
+    height: 1rem;
+    margin-top: -1rem;
+  }
+}
