@@ -11,7 +11,7 @@
   "scripts": {
     "copy": "copyfiles robots.txt humans.txt favicon.ico docs",
     "build": "parcel build *.html -d docs && npm run copy",
-    "dev": "parcel index.html --open",
+    "dev": "parcel -d docs index.html --open",
     "start": "npm run build && npm run dev"
   },
   "devDependencies": {
